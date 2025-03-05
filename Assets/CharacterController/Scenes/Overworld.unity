@@ -1816,10 +1816,10 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1828355989677323385, guid: 7c7645e5d0cb8cf4bb8be56bc87ebf77, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1796898154}
+      addedObject: {fileID: 1796898149}
     - targetCorrespondingSourceObject: {fileID: 1828355989677323385, guid: 7c7645e5d0cb8cf4bb8be56bc87ebf77, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1796898149}
+      addedObject: {fileID: 1796898156}
     - targetCorrespondingSourceObject: {fileID: 7683675683740200286, guid: 7c7645e5d0cb8cf4bb8be56bc87ebf77, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1505832801}
@@ -1935,8 +1935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38cd7a88249f8ef469bfbf853befe346, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelManager: {fileID: 0}
-  player: {fileID: 1796898154}
+  player: {fileID: 0}
 --- !u!4 &706664819
 Transform:
   m_ObjectHideFlags: 0
@@ -85645,7 +85644,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 988126010531943277, guid: 7c7645e5d0cb8cf4bb8be56bc87ebf77, type: 3}
   m_PrefabInstance: {fileID: 598651805}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1796898154
+--- !u!114 &1796898156
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85657,9 +85656,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bd8b226a479ccc4cb739b73575f6991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 1505832801}
   moveVector: {x: 0, y: 0}
   moveSpeed: 3
   sprintMultiplier: 2
+  magnitudeDebug: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
