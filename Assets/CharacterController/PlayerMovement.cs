@@ -60,19 +60,22 @@ public class PlayerMovement : MonoBehaviour
 
     void HandleAnimation()
     {
-        magnitudeDebug = moveVector.magnitude;
+        //magnitudeDebug = moveVector.magnitude;
                
 
         if(moveVector.magnitude != 0)
         {
             animator.SetFloat("Horizontal", moveVector.x);
             animator.SetFloat("Vertical", moveVector.y);
+            animator.SetFloat("LastMoveHorizontal", moveVector.x);
+            animator.SetFloat("LastMoveVertical", moveVector.y);
             animator.SetBool("Moving", true);
         }
         else
         {          
             animator.SetBool("Moving", false);
         }
+
     }
 
     void OnDisable()
